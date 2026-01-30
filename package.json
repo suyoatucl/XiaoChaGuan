@@ -1,0 +1,18 @@
+{
+  "name": "xiaochaguan",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered multilingual fact-checking browser extension",
+  "scripts": {
+    "dev:extension": "pnpm --filter @xiaochaguan/extension dev",
+    "build:extension": "pnpm --filter @xiaochaguan/extension build",
+    "dev:web": "pnpm --filter @xiaochaguan/web dev",
+    "build:web": "pnpm --filter @xiaochaguan/web build",
+    "dev:backend": "cd packages/backend && uvicorn app.main:app --reload --port 8000"
+  },
+  "pnpm": {
+    "overrides": {
+      "sharp": "^0.33.2"
+    }
+  }
+}
