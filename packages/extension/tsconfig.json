@@ -30,7 +30,10 @@
   "include": [
     ".plasmo/index.d.ts",
     "src/**/*",
-    "*.ts"
+    "background/**/*",
+    "contents/**/*",
+    "*.ts",
+    "*.svelte"
   ],
   "exclude": [
     "node_modules",
